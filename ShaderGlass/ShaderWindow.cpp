@@ -580,7 +580,7 @@ void ShaderWindow::BuildOutputMenu()
     }
     InsertMenu(sMenu, 5, MF_BYPOSITION | MF_STRING | MF_POPUP, (UINT_PTR)m_frameSkipMenu, L"Frame Skip");
 
-    InsertMenu(sMenu, 6, MF_BYPOSITION | MF_STRING, ID_PROCESSING_FULLSCREEN, L"Fullscreen\tCtrl+Shift+G");
+    InsertMenu(sMenu, 6, MF_BYPOSITION | MF_STRING, ID_PROCESSING_FULLSCREEN, L"Fullscreen\tAlt+X");
 }
 
 void ShaderWindow::BuildShaderMenu()
@@ -1548,7 +1548,7 @@ bool ShaderWindow::GetHotkeyState()
 
 void ShaderWindow::RegisterHotkeys()
 {
-    RegisterHotKey(m_mainWindow, HK_FULLSCREEN, MOD_CONTROL | MOD_SHIFT, 0x47); // G
+    RegisterHotKey(m_mainWindow, HK_FULLSCREEN, MOD_CONTROL | MOD_ALT, 0x58); // X
     RegisterHotKey(m_mainWindow, HK_SCREENSHOT, MOD_CONTROL | MOD_SHIFT, 0x53); // S
     RegisterHotKey(m_mainWindow, HK_PAUSE, MOD_CONTROL | MOD_SHIFT, 0x50); // P
 }
